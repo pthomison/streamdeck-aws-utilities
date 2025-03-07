@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <title>Lambda Executor Settings</title>
+    <meta charset="utf-8" />
+    <script src="https://sdpi-components.dev/releases/v3/sdpi-components.js"></script>
+</head>
+
+<body>
+    <!-- https://sdpi-components.dev/docs/components -->
+
+    <sdpi-item label="AWS Region">
+        <sdpi-textfield setting="awsRegion" placeholder="us-east-1"></sdpi-textfield>
+    </sdpi-item>
+
+    <sdpi-item label="AWS Profile">
+        <sdpi-textfield setting="awsProfile" placeholder="default"></sdpi-textfield>
+    </sdpi-item>
+    <br />
+
+    <sdpi-item label="Lambda Function Short Name">
+        <sdpi-textarea setting="functionShortName" required="false"></sdpi-textarea>
+    </sdpi-item>
+
+    <sdpi-item label="Lambda Function Name">
+        <sdpi-textfield setting="functionName" required="true"></sdpi-textfield>
+    </sdpi-item>
+
+    <sdpi-item label="Lambda Function Data">
+        <sdpi-textarea setting="functionData" required="false"></sdpi-textarea>
+    </sdpi-item>
+
+    <sdpi-item label="Lambda Success Message">
+        <sdpi-textarea setting="successMessage" required="false"></sdpi-textarea>
+    </sdpi-item>
+
+    <sdpi-item label="Lambda Failure Message">
+        <sdpi-textarea setting="failureMessage" required="false"></sdpi-textarea>
+    </sdpi-item>
+
+    <sdpi-item label="Lambda Running Message">
+        <sdpi-textarea setting="runningMessage" required="false"></sdpi-textarea>
+    </sdpi-item>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+{
+	"Name": "AWS Utilities",
+	"Version": "0.0.0.1",
+	"Author": "Patrick Thomison",
+	"Actions": [
+		{
+			"Name": "Execute Lambda",
+			"UUID": "com.pthomison.aws-utilities.lambda-executer",
+			"Icon": "imgs/actions/lambda-executer/icon",
+			"Tooltip": "tbd",
+			"PropertyInspectorPath": "ui/lambda-execute.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/lambda-executer/key",
+					"TitleAlignment": "bottom",
+					"FontSize": 10
+				}
+			]
+		}
+	],
+	"Category": "AWS Utilities",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Various AWS actions & utilities",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.4"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "12"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+	"UUID": "com.pthomison.aws-utilities"
+}

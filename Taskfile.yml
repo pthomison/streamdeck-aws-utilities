@@ -1,0 +1,20 @@
+version: "3"
+
+tasks:
+  clean:
+    cmds:
+      - rm -rf ./testing-lambdas/.aws-sam
+      - rm -rf ./com.pthomison.aws-utilities.sdPlugin/bin
+      - rm -rf ./com.pthomison.aws-utilities.sdPlugin/logs
+
+  deploy-test-lambdas:
+    cmds:
+      - cd ./testing-lambda/ && sam build && sam deploy --no-confirm-changeset
+
+  development-server:
+    cmds:
+      - npm run watch
+
+  test:
+    cmds:
+      - npx jest
