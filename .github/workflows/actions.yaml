@@ -12,5 +12,5 @@ jobs:
       - name: StreamDeck Distribution Tool
         uses: AdamCarballo/streamdeck-distribution-tool@v1
         with:
-          input: com.company.plugin_name.sdPlugin
+          input: com.pthomison.aws-utilities.sdPlugin
           output: release
