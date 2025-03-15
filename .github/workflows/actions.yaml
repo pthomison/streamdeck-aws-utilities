@@ -1,0 +1,10 @@
+name: Build, Tag, & Release
+on: [push]
+
+jobs:
+  Build-Tag-Release:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉"
+
+      - uses: actions/checkout@v3
