@@ -8,3 +8,9 @@ jobs:
       - run: echo "🎉"
 
       - uses: actions/checkout@v3
+
+      - name: StreamDeck Distribution Tool
+        uses: AdamCarballo/streamdeck-distribution-tool@v1
+        with:
+          input: com.company.plugin_name.sdPlugin
+          output: release
